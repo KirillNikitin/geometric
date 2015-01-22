@@ -1,0 +1,143 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+	background: #dddddd;
+}
+.wrapper {
+	width: 980px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	background: #ffffff;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 150px;
+	background: none;
+	position: relative;
+}
+.header p {padding: 16px 8px 0;}
+.header .cords {
+	position: absolute;
+	width: 100px;
+	right: 0;
+	bottom: 0;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+	width: 100%;
+	padding: 0 0 100px;
+	position: relative;
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.content {
+	padding: 0 0 0 270px;
+}
+.square {width: 100px; height: 100px;}
+.rectangle {width: 200px; height: 100px;}
+.circle {width: 100px; height: 100px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%;}
+.ellipse {width: 200px;	height: 100px; -moz-border-radius: 50% / 50%; -webkit-border-radius: 50% / 50%; border-radius: 50% / 50%;}
+.textbox {width: 215px; height: 115px;}
+.square, .rectangle, .circle, .ellipse, .textbox {border: 1px solid #999; position: absolute;}
+.textbox p {height: 100%; width: 100%; overflow: hidden;}
+.resize {right: -5px; bottom: -3px; width: 15px; height: 15px; cursor: url('../i/resize-cursor.png'), pointer;}
+.rotate {right: -15px; top: -15px; width: 25px; height: 25px; cursor: url('../i/rotate-cursor.png'), pointer; }
+.resize, .rotate {position: absolute; display: block; }
+
+.resize-sq, .rotate-sq {height: 4px; width: 4px; background: #777; position: absolute; left: 8px; display: none;}
+.resize-sq {top: 10px;}
+.rotate-sq {bottom: 9px;}
+.resize:hover .resize-sq, .rotate:hover .rotate-sq {display: block;}
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+	float: left;
+	width: 250px;
+	margin-left: -100%;
+	position: relative;
+	background: transparent;
+	padding: 8px;
+}
+.set-default {margin: 8px;}
+.set-default span {padding: 0px; border-bottom: 1px dashed #777; }
+.set-default span:hover {border-bottom: 1px solid #777; cursor: pointer;}
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	width: 980px;
+	margin: -100px auto 0;
+	height: 100px;
+	background: transparent;
+	position: relative;
+
+}
+.footer span {font-style: italic; font-size: 90%; padding: 8px;}

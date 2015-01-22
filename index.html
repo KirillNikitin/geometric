@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/stuff.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jQuery-help.js"></script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+		<p>This is geometric/DOM/HTML game. You can choose any widget available in select. You can resize it, drag and even rotate! Resize it by pulling by bottom right corner and rotate any widget (even circle :-D ) by dragging by cornet in top and right.</p>
+		<p>Be careful - don't make huge numbers of widgets. Because it is just DOM HTML it can be quite hard for it.
+		<div id="cords" class="cords">
+			<div>
+				<span>Cursor X:</span><span id="mouseX"/></span>
+			</div>
+			<div>
+				<span>Cursor Y:</span><span id="mouseY"/></span>
+			</div>
+		</div>
+	</header><!-- .header-->
+
+	<div class="middle">
+
+		<div class="container">
+			<main class="content">
+				<strong>Content:</strong> 
+
+
+            </main><!-- .content -->
+		</div><!-- .container-->
+
+		<aside class="left-sidebar">
+			<div>Choose a widget</div>
+			<select id="select">
+				<option id="default">Choose an option with widget</option>
+				<option id="rectangle">Rectangle</option>
+				<option id="square">Square</option>
+				<option id="ellipse">Ellipse</option>
+				<option id="circle">Circle</option>
+				<option id="textbox">Textbox</option>
+			</select>
+			<div id="set-default" class="set-default"><span>Set by default</span></div>
+		</aside><!-- .left-sidebar -->
+
+	</div><!-- .middle-->
+
+</div><!-- .wrapper -->
+
+<footer class="footer">
+	<span>by Kirill Nikitin</span>
+</footer><!-- .footer -->
+
+</body>
+</html>
